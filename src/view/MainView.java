@@ -159,6 +159,43 @@ public class MainView  extends JFrame {
     //Methoden hinzufügen, die die Werte von den Textfeldern holen bzw. setzen
     //Beachten Sie: Datentypen entsprechend behandeln und negative Zahlenwerte behandeln
 
+    public int getLicenseIdFromTextfield(){
+        int nr = 0;
+        try {
+            nr = Integer.parseInt( licenseIdTf.getText() );
+            if (nr <= 0){
+                nr = 0;
+                throw new NumberFormatException();
+            }
+        }
+        catch (NumberFormatException ignored) {
+            showErrorMessage("Keine gültige Lizenz Id");
+        }
+
+        setLicenseIdToTextfield(nr);
+        return nr;
+    }
+    public void setLicenseIdToTextfield( int id ){
+        licenseIdTf.setText( String.valueOf(id));
+    }
+
+    public String getSoftwareNameFromTextfield(){
+         return softwareNameTf.getText();
+    }
+
+    public void setSoftwareNameToTextfield( String name ){
+         licenseIdTf.setText( name);
+    }
+
+    public void setLicenseUserIdToTextfield( int id ){
+         licenseUserIdTf.setText( String.valueOf(id) );
+    }
+
+    public int getLicenseUserIdFromTextfield(){
+
+        return 0;
+    }
+
 
 
 
