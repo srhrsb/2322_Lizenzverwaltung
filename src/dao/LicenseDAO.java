@@ -16,7 +16,7 @@ public class LicenseDAO {
 
     public boolean addLicense(int id, int userId, String name, LicenseType licenseType){
         if(isLicenseIdUnique(id)) {
-            var license = new License(id, name, licenseType);
+            var license = new License(id, userId, name, licenseType);
             licenseList.add(license);
             return true;
         }

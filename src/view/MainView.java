@@ -154,4 +154,19 @@ public class MainView  extends JFrame {
         return JOptionPane.YES_OPTION == JOptionPane.showConfirmDialog(this,
                 message, "Frage", JOptionPane.YES_NO_OPTION);
     }
+
+
+    //Methoden hinzufügen, die die Werte von den Textfeldern holen bzw. setzen
+    //Beachten Sie: Datentypen entsprechend behandeln und negative Zahlenwerte behandeln
+
+
+
+
+
+
+
+
+
+
+
 }

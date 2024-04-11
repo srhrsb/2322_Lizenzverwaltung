@@ -6,8 +6,9 @@ public class License {
     private String name;
     private LicenseType licenseType;
 
-    public License(int id, String name, LicenseType licenseType) {
+    public License(int id, int userId, String name, LicenseType licenseType) {
         this.id = id;
+        this.userId = userId;
         this.name = name;
         this.licenseType = licenseType;
     }
