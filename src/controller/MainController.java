@@ -23,7 +23,9 @@ public class MainController {
     }
 
     public static void main(String[] args) {
-        new MainController(new LicenseDAO(), new MainView(600,250));
+
+        new MainController(new LicenseDAO(),
+        new MainView(600,250));
     }
 
     public void onClickShowLicense(ActionEvent event){
